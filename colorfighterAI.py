@@ -1,3 +1,7 @@
+#By Akshay Gupta
+#AI Hackathon 10/12/19
+#UCLA
+
 from colorfight import Colorfight
 import time
 import random
