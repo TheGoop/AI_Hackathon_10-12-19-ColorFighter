@@ -25,11 +25,8 @@ def play_game(
 
     # game.register should return True if succeed.
     # As no duplicate usernames are allowed, a random integer string is appended
-    # to the example username. You don't need to do this, change the username
-    # to your ID.
-    # You need to set a password. For the example AI, the current time is used
-    # as the password. You should change it to something that will not change
-    # between runs so you can continue the game if disconnected.
+    # to the example username. 
+    # You need to set a password. 
     if game.register(username = username, \
             password = password):
         # This is the game loop
@@ -108,19 +105,8 @@ def play_game(
                                             me.energy -= cell.building.upgrade_energy
                                             print('elixir collector')
 
-
-
-
-
-
                 #print(list_of_energy)
-
-
-
             # Send the command list to the server
-
-
-
 
                 # Build a random building if we have enough gold
                 if cell.owner == me.uid and cell.building.is_empty and me.gold >= BUILDING_COST[0]:
